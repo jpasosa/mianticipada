@@ -40,4 +40,17 @@ return [
         ],
     ],
 
+    'facebook' => [
+        'client_id' => env('FACE_CLIENTID'),
+        'client_secret' => env('FACE_CLIENTSECRET'),
+        'redirect' => env('FACE_REDIRECT')
+    ],
+
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENTID'),
+        'client_secret' => env('GOOGLE_CLIENTSECRET'),
+        'redirect' => env('GOOGLE_REDIRECT')
+    ],
+
+
 ];

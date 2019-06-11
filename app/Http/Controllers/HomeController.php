@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+
+use Auth;
+
+
 class HomeController extends Controller
 {
-
     /**
      * Create a new controller instance.
      *
@@ -14,6 +18,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        //dd('entra a controlar el auth en el constructor del controlado HomeController.php');
         //$this->middleware('auth');
     }
 
@@ -24,7 +29,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('welcome', [ 'title' => $this->title ]);
+        // dd('entro al controlador HOME, método index');
 
+        dd(Auth::user());
+
+        return view('home', [ 'title' => $this->title ]);
+        // return view('home');
     }
 }

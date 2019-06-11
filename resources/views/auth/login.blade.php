@@ -64,6 +64,37 @@
                                 @endif
                             </div>
                         </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <button id="facebook-login" class="button raised bg-blue-500 color-white mb10" style="background-color: #1D558C; border-radius: 20px;">
+                                    <div class="fb-log">
+                                        <a href="{{ route('social.auth', 'facebook') }}">
+                                            <i class="icon-post-facebook"></i>
+                                            Entrar con facebook
+                                        </a>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <button id="google-login" class="button raised bg-blue-500 color-white mb10" style="background-color: #1D558C; border-radius: 20px;">
+                                    <div class="fb-log">
+                                        <a href="{{ route('social.auth', 'google') }}">
+                                            <i class="icon-post-google"></i>
+                                            Entrar con google
+                                        </a>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+
+
+
+
                     </form>
                 </div>
             </div>
